@@ -7,6 +7,8 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { Entypo } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -38,6 +40,20 @@ export default function TabLayout() {
         options={{
           title: 'Explore',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="motivation-corner"
+        options={{
+          title: 'Motivation',
+          tabBarIcon: ({ color }) => <Entypo size={28} name="heart" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="milestones"
+        options={{
+          title: 'Milestones',
+          tabBarIcon: ({ color }) => <Entypo size={28} name="rocket" color={ color } />,
         }}
       />
     </Tabs>
