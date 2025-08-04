@@ -1,4 +1,5 @@
 import { View, Text, Pressable, Dimensions } from 'react-native';
+import { Image } from 'expo-image';
 
 export function Badge({
   name,
@@ -6,7 +7,7 @@ export function Badge({
   color="default",
   ...rest
 }: any) {
-  let hovered = false;
+  let pressed = false;
   let title='\"'+name+'\"';
   let desc='-- '+description;
   return (
@@ -31,18 +32,28 @@ export function Badge({
         left:50,
         right:50,
       }} onPress={()=> {
-        hovered=!hovered;
-        console.log("ya");
+        pressed=!pressed;
+        //console.log("pressed");
       }}>
         {() => (
-        <>
-        <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#333' }}>
-        {hovered ? title : '?'}
-        </Text>
-        <Text style={{ fontSize: 12, fontStyle: 'italic', color: '#666', marginTop: 10 }}>
-        {hovered ? desc : ''}
-        </Text>
-        </>
+        <View style={{
+          
+        }}>
+          <Image source={pressed?require('@/assets/images/nothing.png'):require('@/assets/images/react-logo.png')} style={{
+            width: 60,
+            height: 60,
+          }}/>
+          <View style={{
+            marginTop: -60,
+          }}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#333', alignSelf: 'center' }}>
+              {pressed ? title : ''}
+            </Text>
+            <Text style={{ fontSize: 12, fontStyle: 'italic', color: '#666', marginTop: 10, alignSelf: 'center' }}>
+              {pressed ? desc : ''}
+            </Text>
+          </View>
+        </View>
         )}
       </Pressable>
       

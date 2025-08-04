@@ -7,6 +7,11 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import SplitText from "@/components/SplitText";
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 export default function TabTwoScreen() {
   return (
@@ -21,7 +26,7 @@ export default function TabTwoScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText>Explore!</ThemedText>
       </ThemedView>
       <ThemedText>This app has the following features for you to explore:</ThemedText>
       <Collapsible title="Motivational messages">
