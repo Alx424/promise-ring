@@ -8,7 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import { Entypo } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
-import { BadgeDisplay } from '@/components/ui/BadgeDisplay';
+import { BadgeDisplay } from '@/components/badges/BadgeDisplay';
 
 export default function HomeScreen() {
   return (

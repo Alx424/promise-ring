@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native';
-import { Badge } from '@/components/ui/Badge';
+import { Badge } from '@/components/badges/Badge';
 
 export const BadgeDisplay = () => {
   return (

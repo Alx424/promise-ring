@@ -7,7 +7,6 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
-import SplitText from "@/components/SplitText";
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');

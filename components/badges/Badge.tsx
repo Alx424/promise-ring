@@ -1,15 +1,20 @@
 import { View, Text, Pressable, Dimensions } from 'react-native';
 import { Image } from 'expo-image';
+import * as RNFS from 'react-native-fs';
+
 
 export function Badge({
+  id="1",
   name,
   description,
   color="default",
+  cover,
   ...rest
 }: any) {
   let pressed = false;
   let title='\"'+name+'\"';
   let desc='-- '+description;
+  console.log(cover);
   return (
     <View style={{
       backgroundColor: color=="blue"?'#b5deffff':'#ffe4b5',
@@ -39,9 +44,9 @@ export function Badge({
         <View style={{
           
         }}>
-          <Image source={pressed?require('@/assets/images/nothing.png'):require('@/assets/images/react-logo.png')} style={{
-            width: 60,
-            height: 60,
+          <Image source={pressed ? require('@/assets/images/nothing.png') : require('@/assets/images/star.png')} style={{
+            width: 70,
+            height: 70,
           }}/>
           <View style={{
             marginTop: -60,

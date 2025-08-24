@@ -1,0 +1,68 @@
+{
+    "Badges": {
+        "title": "Badges",
+        "description": "A badge is a small count and labeling component. Badges are often used as indicators of new or unread items.",
+        "badges": [
+        {
+            "name": "The Journey Awaits",
+            "desc": "Started tracking!",
+            "color": "blue",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "You got this!",
+            "desc": "First day reached",
+            "color": "default",
+            "img": "@/assets/images/badge-1.png"
+        },
+        {
+            "name": "Three's a party",
+            "desc": "3 days in!",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "1, 2, 3, 4, 5!",
+            "desc": "Reached 5 days!",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "Weak??? More like *Week!*",
+            "desc": "Reached 7 days",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "A fortnight!",
+            "desc": "Reached 14 days",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "Once in a full moon",
+            "desc": "Reached 30 days",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "A double month!",
+            "desc": "Reached 60 days",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "A triple month!",
+            "desc": "Reached 90 days",
+            "color": "default",
+            "img": "@/assets/images/nothing.png"
+        },
+        {
+            "name": "",
+            "desc": "Reached 100 days",
+            "color": "blue",
+            "img": "@/assets/images/nothing.png"
+        }
+        ]
+    }
+}
