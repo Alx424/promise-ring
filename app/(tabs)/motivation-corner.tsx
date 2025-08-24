@@ -15,6 +15,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#ff6fd6ff', dark: '#ff6fd6ff' }}
       headerImage={
+        // find icon names at https://icons.expo.fyi/Index
         <MaterialIcons
           size={310}
           color="#808080"
